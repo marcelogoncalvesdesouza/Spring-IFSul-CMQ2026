@@ -1,40 +1,27 @@
-## WS-DNWeb Tecnologia
+# Ecossistema Spring
 
-## Git/Github
+## Projetos do Spring
+- <b>Spring Boot</b>: O Spring Boot facilita a criação de aplicativos autônomos baseados em Spring de nível de produção que você pode "simplesmente executar";
+- <b>Spring Framework</b>: O Spring Framework fornece um modelo abrangente de programação e configuração para aplicativos empresariais modernos baseados em Java - em qualquer tipo de plataforma de implementação;
+- <b>Spring Data</b>: A missão da Spring Data é fornecer um modelo de programação familiar e consistente baseado em Spring para acesso a dados, mantendo as características especiais do armazenamento de dados subjacente;
 
-CRIAÇÃO DE REPOSITÓRIO
-
+## Dependências externas:
+- <b>H2 Database</b>: O H2 é um Sistema Gerenciador de Banco de Dados Relacional (SGBDR) escrito em Java, extremamente leve e rápido. Ele é muito popular no desenvolvimento de software, especialmente por poder rodar diretamente na memória RAM (sem salvar no disco) ou ser embutido dentro da própria aplicação.
 ```
-git init
-git config --global user.email "marcelo.souza@dnweb.com.br"
-git config --global user.name "Marcelo Gonçalves de Souza"
-git remote add origin https://github.com/marcelogoncalvesdesouza/xxx.git
-git branch -M main
-git add .
-git commit -m "Update."
-git push -u origin main
-```
-
-ATUALIZAÇÃO DE REPOSITÓRIO
-
-```
-git add .
-git commit -m "Update."
-git push -u origin main
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>runtime</scope>
+</dependency>
 ```
 
-REPOSITÓRIO EXISTENTE
+## Annotations
+- <b>@Serial</b>: A anotação @Serial (do pacote java.io) não é exclusiva do Spring, mas sim um recurso nativo do Java introduzido na versão 14. Ela serve para fazer verificações em tempo de compilação de classes que implementam a interface Serializable.
+
+## Links
+
+- Spring Initializr
 
 ```
-git init
-git remote add origin https://github.com/marcelogoncalvesdesouza/xxx.git
-git branch -M main
-git pull origin main
-```
-
-OUTROS COMANDOS
-
-```
-git status
-git ...
+https://start.spring.io/
 ```
