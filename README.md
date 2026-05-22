@@ -51,6 +51,9 @@
 INSERT INTO tb_especialidade (nome) VALUES ('Clínica Geral');
 INSERT INTO tb_especialidade (nome) VALUES ('Cardiologia');
 INSERT INTO tb_especialidade (nome) VALUES ('Pediatria');
+INSERT INTO tb_medico (nome, email, crm, atende_convenio, id_especialidade) VALUES ('Paula Moraes', 'pmoraes@gmail.com', '55412', TRUE, 1);
+INSERT INTO tb_medico (nome, email, crm, atende_convenio, id_especialidade) VALUES ('Mônica Persa', 'drapersa@gmail.com', '41547', FALSE, 2);
+INSERT INTO tb_medico (nome, email, crm, atende_convenio, id_especialidade) VALUES ('João Antônio Silveira', 'ja.silveira@gmail.com', '32002', TRUE, 1);
 ```
 
 ## Annotations
@@ -63,7 +66,7 @@ INSERT INTO tb_especialidade (nome) VALUES ('Pediatria');
 https://start.spring.io/
 ```
 
-CRIAÇÃO DE REPOSITÓRIO
+## CRIAÇÃO DE REPOSITÓRIO
 ```
 git init
 git config --global user.email "marcelo.souza@dnweb.com.br"
@@ -75,14 +78,14 @@ git commit -m "Update."
 git push -u origin main
 ```
 
-ATUALIZAÇÃO DE REPOSITÓRIO
+## ATUALIZAÇÃO DE REPOSITÓRIO
 ```
 git add .
 git commit -m "Update."
 git push -u origin main
 ```
 
-REPOSITÓRIO EXISTENTE
+## REPOSITÓRIO EXISTENTE
 ```
 git init
 git remote add origin https://github.com/marcelogoncalvesdesouza/xxx.git
