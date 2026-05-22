@@ -5,7 +5,7 @@
 - <b>Spring Framework</b>: O Spring Framework fornece um modelo abrangente de programação e configuração para aplicativos empresariais modernos baseados em Java - em qualquer tipo de plataforma de implementação;
 - <b>Spring Data</b>: A missão da Spring Data é fornecer um modelo de programação familiar e consistente baseado em Spring para acesso a dados, mantendo as características especiais do armazenamento de dados subjacente;
 
-## dependências do projeto
+## Dependências do projeto
 ```
 <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -44,6 +44,13 @@
     <artifactId>h2</artifactId>
     <scope>runtime</scope>
 </dependency>
+```
+
+## Inserindo dados no H2
+```
+INSERT INTO tb_especialidade (nome) VALUES ('Clínica Geral');
+INSERT INTO tb_especialidade (nome) VALUES ('Cardiologia');
+INSERT INTO tb_especialidade (nome) VALUES ('Pediatria');
 ```
 
 ## Annotations
