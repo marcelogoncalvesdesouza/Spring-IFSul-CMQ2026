@@ -57,6 +57,12 @@ INSERT INTO tb_medico (nome, email, crm, atende_convenio, id_especialidade) VALU
 ```
 
 ## Annotations
+- <b>@table</b>:  No ecossistema Spring, especialmente ao utilizar JPA/Hibernate para mapeamento objeto-relacional, ad
+
+- <b>@table</b>:  No ecossistema Spring, especialmente ao utilizar JPA/Hibernate para mapeamento objeto-relacional, a anotação principal para mapear uma classe Java para uma tabela de banco de dados é a @Entity.
+
+- <b>@id</b>:  Define o campo como a chave primária de uma entidade JPA, garantindo identificação única para cada registro no banco de dados. Ela é obrigatória em todas as classes de entidade e frequentemente usada com @GeneratedValue para automatizar a criação de ID.
+
 - <b>@Serial</b>: A anotação @Serial (do pacote java.io) não é exclusiva do Spring, mas sim um recurso nativo do Java introduzido na versão 14. Ela serve para fazer verificações em tempo de compilação de classes que implementam a interface Serializable.
 
 ## Links
